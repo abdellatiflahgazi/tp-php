@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+  Auteur   : Abdellatif Lahgazi
+  Objectif : Exercice 4.3 - saisie d'un apprenant, envoyée en POST vers traitement.php
+  Date     : 18/10/2026
+-->
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Saisie des notes</title>
+</head>
+<body>
+    <h1>Saisie d'un apprenant</h1>
+    <form action="traitement.php" method="post">
+        <p><label>Nom : <input type="text" name="nom" required></label></p>
+        <p><label>Note d'informatique : <input type="number" name="note_info" min="0" max="20" step="0.25" required></label></p>
+        <p><label>Note de mathématiques : <input type="number" name="note_math" min="0" max="20" step="0.25" required></label></p>
+        <p><button type="submit">Enregistrer</button></p>
+    </form>
+    <p><a href="liste.php">Voir la liste</a></p>
+</body>
+</html>

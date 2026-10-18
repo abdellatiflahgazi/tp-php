@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+  Auteur   : Abdellatif Lahgazi
+  Objectif : Exercice 4.2 - formulaire envoyé en GET vers info.php
+  Date     : 18/10/2026
+-->
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Informations (GET)</title>
+</head>
+<body>
+    <h1>Formulaire en GET</h1>
+    <form action="info.php" method="get">
+        <p><label>Nom : <input type="text" name="nom" required></label></p>
+        <p><label>Prénom : <input type="text" name="prenom" required></label></p>
+        <p>
+            <label>Sexe :
+                <select name="sexe">
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                </select>
+            </label>
+        </p>
+        <p><button type="submit">Envoyer</button></p>
+    </form>
+</body>
+</html>
